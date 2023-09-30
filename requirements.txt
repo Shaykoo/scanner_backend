@@ -32,7 +32,7 @@ scipy==1.7.3
 shapely==2.0.1
 six==1.16.0
 sympy==1.2
-tifffile==2023.9.18
+tifffile==2021.11.2
 torch==2.0.1
 torchvision==0.15.2
 typing_extensions==4.8.0
