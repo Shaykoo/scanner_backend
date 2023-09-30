@@ -31,7 +31,7 @@ scikit-image==0.19.3
 scipy==1.7.3
 shapely==2.0.1
 six==1.16.0
-sympy==1.12
+sympy==1.2
 tifffile==2023.9.18
 torch==2.0.1
 torchvision==0.15.2
