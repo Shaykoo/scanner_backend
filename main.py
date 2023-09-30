@@ -95,7 +95,6 @@ def process_image():
         response_data = {
             'message': 'Image processed successfully',
             'processedImage': processed_image_base64,
-            'barcodeData': barcode_data_list  # Include barcode data in the response
         }
 
         response = jsonify(response_data)
