@@ -99,7 +99,7 @@ def process_image():
 
         response = jsonify(response_data)
         response.headers.add('Access-Control-Allow-Origin',
-                             'http://localhost:4200')
+                             'http://localhost:8080')
         response.headers.add('Access-Control-Allow-Methods', 'POST, OPTIONS')
         response.headers.add('Access-Control-Allow-Headers', 'Content-Type')
 
