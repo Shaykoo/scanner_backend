@@ -11,8 +11,8 @@ import numpy as np
 
 app = Flask(__name__)
 app.config['DEBUG'] = True
-CORS(app, resources={r"/process_image": {"origins": ["https://scanner-frontend-hosting.web.app"]}})
-# CORS(app)
+#CORS(app, resources={r"/process_image": {"origins": ["http://127.0.0.1:4200"]}})
+CORS(app)
 
 height = 800
 width = 600
