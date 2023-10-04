@@ -3,7 +3,7 @@ import numpy as np
 from pyzbar.pyzbar import decode
 
 
-img = cv2.imread("watson.jpg")
+img = cv2.imread("jagota1.jpg")
 
 for code in decode(img):
     print(code.data.decode("utf-8"))
