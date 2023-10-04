@@ -26,7 +26,6 @@ python-bidi==0.4.2
 PyWavelets==1.4.0
 PyYAML==6.0.1
 pyzbar==0.1.9
-zbar-py==1.0.4
 requests==2.31.0
 scikit-image==0.19.3
 scipy==1.7.3
@@ -40,3 +39,4 @@ typing_extensions==4.7.1
 urllib3==2.0.5
 Werkzeug==2.2.3
 gunicorn==21.2.0
+zbar==0.10
