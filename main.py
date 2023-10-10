@@ -7,7 +7,7 @@ from imutils.perspective import four_point_transform
 import base64
 import cv2
 import numpy as np
-from pyzbar.pyzbar import decode
+# from pyzbar.pyzbar import decode
 
 app = Flask(__name__)
 app.config['DEBUG'] = True
@@ -83,19 +83,18 @@ def process_image():
         _, buffer = cv2.imencode('.jpg', warped)
         processed_image_base64 = base64.b64encode(buffer).decode()
 
-        barcode_data_list = []
+        # barcode_data_list = []
         # Barcode scanning
-        for code in decode(warped):
-            barcode_data = code.data.decode("utf-8")
-            print("bbb", barcode_data)
-            barcode_data_list.append(barcode_data)
+        # for code in decode(warped):
+        #     barcode_data = code.data.decode("utf-8")
+        #     print("bbb", barcode_data)
+        #     barcode_data_list.append(barcode_data)
 
         # Set CORS headers in the response
         # Set CORS headers in the response
         response_data = {
             'message': 'Image processed successfully',
-            'processedImage': processed_image_base64,
-            'barcodeData': barcode_data_list
+            'processedImage': processed_image_base64
         }
 
         response = jsonify(response_data)
