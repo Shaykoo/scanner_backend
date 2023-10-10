@@ -100,7 +100,7 @@ def process_image():
 
         response = jsonify(response_data)
         response.headers.add('Access-Control-Allow-Origin',
-                             'https://scanner-frontend-hosting.web.app')
+                             'https://drivers-pwa-acf5d.web.app')
         response.headers.add('Access-Control-Allow-Methods', 'POST, OPTIONS')
         response.headers.add('Access-Control-Allow-Headers', 'Content-Type')
 
